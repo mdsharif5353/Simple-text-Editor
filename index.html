@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-sky-300">
+    <div class="container mx-auto border border-indigo-600 mt-11">
+        <div class="options flex flex-wrap justify-between">
+            <!-- Text Format -->
+            <button class="option-button format text-bold">
+                <i class="fa-solid fa-bold"></i>
+            </button>
+            <button class="option-button script text-italic">
+                <i class="fa-solid fa-italic"></i>
+            </button>
+            <button class="option-button script text-underline">
+                <i class="fa-solid fa-underline"></i>
+            </button>
+
+            <!-- Alignment -->
+            <button class="option-button align text-left">
+                <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button class="option-button align text-center">
+                <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button class="option-button align text-right">
+                <i class="fa-solid fa-align-right"></i>
+            </button>
+
+            <!-- Color -->
+            <div class="color">
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                <label for="Color">Font Color</label>
+            </div>
+        </div>
+        <hr class="divide-y divide-blue-200">
+
+        <div id="text-input" contenteditable="true" class="p-4 bg-white"></div>
+    </div>
+
+<script src="assets/edit.js"></script>
+</body>
+
+</html>
